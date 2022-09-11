@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Portfolio - Pablo</title>
+</head>
+<body>
+    <!-------------------- HEADER -------------------->
+    <header>
+        <div class="title">
+            <h1>PRUEBA</h1>
+            <h2>Texto</h2>
+            <ul>
+                <div class="icon">
+                    <li>Icon1</li>
+                    <li>Icon2</li>
+                    <li>Icon3</li>
+                </div>
+
+                <div class="line"></div>
+
+                <div class="text">
+                    <li>Text1</li>
+                    <li>Text2</li>
+                    <li>Text3</li>
+                </div>
+            </ul>
+            <a href="#about"><i class="fa-solid fa-arrow-down"></i></a>
+        </div>
+
+
+        <nav>
+            <a href="#"><img src="https://cdn0.iconfinder.com/data/icons/editorial-darkmode/24/editorial_html-512.png" alt="logo"></a>
+            <a href="#" class="active-link">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#skills">Skills</a>
+            <a href="#project">Project</a>
+            <a href="#contact">Contact</a>
+            <button class="darkMode" id="darkMode"><i class="fa-solid fa-moon"></i></button>
+        </nav>
+    </header>
+
+    <!-------------------- MAIN CONTENT -------------------->
+    <main>
+        <!-------------------- ABOUT -------------------->
+        <div class="about" id="about">
+            <img src="https://media1.giphy.com/media/gh0RRgkTXedvF0pDc0/giphy.gif?cid=ecf05e47rdhhyeddfui0dg2l0jsly3ej4cm8n5c90bsuzv20&rid=giphy.gif&ct=g" alt="aboutImg">
+            <div class="info">
+                
+                <div class="gear"><i class="fa-solid fa-gear"></i></div>
+                <h1>
+                    Hello, My name is Pablo Zerpa,<br>
+                    I'm a web developer
+                </h1>
+                <p>Let me help you with your project</p>
+                <div class="node"><i class="fa-solid fa-circle-nodes"></i></div>
+
+            </div>
+        </div>
+
+        <!-------------------- SKILLS -------------------->
+        <div class="skills" id="skills">
+            <h1>Skills</h1>
+
+            <div class="skillsGrid">
+                <ul>
+                    <li>
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/html5/html5-original.svg" alt="">
+                        <p>HTML</p>
+                    </li>
+                    <li>
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/css3/css3-original.svg" alt="">
+                        <p>CSS</p>
+                    </li>
+                    <li>
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/sass/sass-original.svg" alt="">
+                        <p>SASS</p>
+                    </li>
+                    <li>
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/javascript/javascript-original.svg" alt="">
+                        <p>Javascript</p>
+                    </li>
+                    <li>
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/react/react-original.svg" alt="">
+                        <p>React.js</p>
+                    </li>
+                    <li>
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/nodejs/nodejs-original.svg" alt="">
+                        <p>Node.js</p>
+                    </li>
+                    <li>
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/typescript/typescript-original.svg" alt="">
+                        <p>TypeScript</p>
+                    </li>
+                    <li>
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/git/git-original.svg" alt="">
+                        <p>Git</p>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-database" style="color: rgb(150, 150, 150);"></i>
+                        <p>Database</p>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-------------------- PROJECT -------------------->
+        <div class="project" id="project">
+
+            <h1>Projects</h1>
+            <div class="projectGrid">
+
+                <div class="card">
+                    <div class="cardImg">
+                        <img src="https://github.com/PabloZerpa/Chroma/raw/master/public/screencapture-chroma.png" alt="">
+                    </div>
+                    
+                    <h6>Chroma - Painting Website</h6>
+                    <ul>
+                        <li><i class="fa-brands fa-html5"></i></li>
+                        <li><i class="fa-brands fa-css3-alt"></i></li>
+                        <li><i class="fa-brands fa-square-js"></i></li>
+                        <li><i class="fa-brands fa-react"></i></li>
+                    </ul>
+                    <a href="https://chroma-website-example.herokuapp.com" target="_blank" >View</a>
+                </div>
+
+                <div class="card">
+                    <div class="cardImg">
+                        <img src="https://github.com/PabloZerpa/Decibels/raw/master/css/decibels.png" alt="">
+                    </div>
+                    
+                    <h6>Decibels - Music Website</h6>
+                    <ul>
+                        <li><i class="fa-brands fa-html5"></i></li>
+                        <li><i class="fa-brands fa-css3-alt"></i></li>
+                        <li><i class="fa-brands fa-square-js"></i></li>
+                        <li><i class="fa-brands fa-node-js"></i></li>
+                    </ul>
+                    <a href="https://pablozerpa.github.io/Decibels/" target="_blank" >View</a>
+                </div>
+
+                <div class="card">
+                    <div class="cardImg">
+                        <img src="https://github.com/PabloZerpa/Widgets-App/raw/main/widgets.png" alt="">
+                    </div>
+                    
+                    <h6>Widgets App</h6>
+                    <ul>
+                        <li><i class="fa-brands fa-html5"></i></li>
+                        <li><i class="fa-brands fa-css3-alt"></i></li>
+                        <li><i class="fa-brands fa-square-js"></i></li>
+                        <li><i class="fa-brands fa-node-js"></i></li>
+                    </ul>
+                    <a href="https://widgets-app1.herokuapp.com" target="_blank" >View</a>
+                </div>
+
+                <div class="card">
+                    <div class="cardImg">
+                        <img src="https://github.com/PabloZerpa/Virtual-Courses/raw/main/virtual_courses.png" alt="">
+                    </div>
+                    
+                    <h6>Virtual Courses</h6>
+                    <ul>
+                        <li><i class="fa-brands fa-html5"></i></li>
+                        <li><i class="fa-brands fa-css3-alt"></i></li>
+                        <li><i class="fa-brands fa-square-js"></i></li>
+                        <li><i class="fa-brands fa-node-js"></i></li>
+                    </ul>
+                    <a href="https://virtual-courses.herokuapp.com" target="_blank" >View</a>
+                </div>
+
+                <div class="card">
+                    <div class="cardImg">
+                        <img src="https://github.com/PabloZerpa/Dashboard-02/raw/main/dashboard.png" alt="">
+                    </div>
+                    
+                    <h6>Dashboard</h6>
+                    <ul>
+                        <li><i class="fa-brands fa-html5"></i></li>
+                        <li><i class="fa-brands fa-css3-alt"></i></li>
+                        <li><i class="fa-brands fa-square-js"></i></li>
+                    </ul>
+                    <a href="https://pablozerpa.github.io/Dashboard-02/" target="_blank" >View</a>
+                </div>
+
+                <div class="card">
+                    <div class="cardImg">
+                        <img src="https://raw.githubusercontent.com/PabloZerpa/Astronaut/master/public/astronaut.png" alt="">
+                    </div>
+                    
+                    <h6>Astronaut - Web Search</h6>
+                    <ul>
+                        <li><i class="fa-brands fa-html5"></i></li>
+                        <li><i class="fa-brands fa-css3-alt"></i></li>
+                        <li><i class="fa-brands fa-square-js"></i></li>
+                        <li><i class="fa-brands fa-react"></i></li>
+                        <li><i class="fa-brands fa-node-js"></i></li>
+                    </ul>
+                    <a href="https://astronaut-web-search.netlify.app" target="_blank" >View</a>
+                </div>
+
+                <div class="card">
+                    <div class="cardImg">
+                        <img src="https://github.com/PabloZerpa/Virtual-Courses/raw/main/virtual_courses.png" alt="">
+                    </div>
+                    
+                    <h6>Coming - Soon</h6>
+                    <ul>
+                        <li><i class="fa-brands fa-html5"></i></li>
+                        <li><i class="fa-brands fa-css3-alt"></i></li>
+                        <li><i class="fa-brands fa-square-js"></i></li>
+                        <li><i class="fa-brands fa-react"></i></li>
+                        <li><i class="fa-brands fa-node-js"></i></li>
+                    </ul>
+                    <a href="https://google.com" target="_blank" >View</a>
+                </div>
+
+                <div class="card">
+                    <div class="cardImg">
+                        <img src="https://github.com/PabloZerpa/Virtual-Courses/raw/main/virtual_courses.png" alt="">
+                    </div>
+                    
+                    <h6>Coming - Soon</h6>
+                    <ul>
+                        <li><i class="fa-brands fa-html5"></i></li>
+                        <li><i class="fa-brands fa-css3-alt"></i></li>
+                        <li><i class="fa-brands fa-square-js"></i></li>
+                        <li><i class="fa-brands fa-react"></i></li>
+                        <li><i class="fa-brands fa-node-js"></i></li>
+                    </ul>
+                    <a href="https://google.com" target="_blank" >View</a>
+                </div>
+
+                
+
+            </div>
+
+        </div>
+
+        <!-------------------- CONTACT -------------------->
+        <div class="contact" id="contact">
+            <h1>Contact Me</h1>
+            <ul>
+                <a href="https://www.linkedin.com/in/pablo-zerpa/" target="_blank">Linkedin<i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/PabloZerpa" target="_blank">GitHub<i class="fa-brands fa-github-alt"></i></a>
+                <a href="https://hashnode.com" target="_blank">Hashnode<i class="fa-brands fa-hashnode"></i></a>
+                <a href="https://google.com" target="_blank">Email<i class="fa-solid fa-envelope"></i></a>
+            </ul>
+        </div>
+
+    </main>
+
+    <!-------------------- FOOTER -------------------->
+    <footer>
+
+        <div></div>
+        <h6>© Pablo Zerpa. All right reserved</h6>
+        <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
