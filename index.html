@@ -13,30 +13,23 @@
 <body>
     <!-------------------- HEADER -------------------->
     <header>
-        <div class="title">
-            <h1>PRUEBA</h1>
-            <h2>Texto</h2>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn"><i class="fas fa-bars"></i></label>
+
+        <div class="title center">
+            <h1>Pablo Zerpa</h1>
             <ul>
                 <div class="icon">
-                    <li>Icon1</li>
-                    <li>Icon2</li>
-                    <li>Icon3</li>
-                </div>
-
-                <div class="line"></div>
-
-                <div class="text">
-                    <li>Text1</li>
-                    <li>Text2</li>
-                    <li>Text3</li>
+                    <li>💻 Web Developer</li>
+                    <li>⚙️ Systems Engineering</li>
+                    <li>✉️ pablozerpav@gmail.com</li>
                 </div>
             </ul>
             <a href="#about"><i class="fa-solid fa-arrow-down"></i></a>
         </div>
 
-
-        <nav>
-            <a href="#"><img src="https://cdn0.iconfinder.com/data/icons/editorial-darkmode/24/editorial_html-512.png" alt="logo"></a>
+        <nav class="nav" id="nav">
+            <a href="#"><img src="./pz.png" alt="logo"></a>
             <a href="#" class="active-link">Home</a>
             <a href="#about">About Me</a>
             <a href="#skills">Skills</a>
@@ -44,51 +37,56 @@
             <a href="#contact">Contact</a>
             <button class="darkMode" id="darkMode"><i class="fa-solid fa-moon"></i></button>
         </nav>
+
     </header>
 
     <!-------------------- MAIN CONTENT -------------------->
     <main>
         <!-------------------- ABOUT -------------------->
-        <div class="about" id="about">
+        <div class="about center" id="about">
             <img src="https://media1.giphy.com/media/gh0RRgkTXedvF0pDc0/giphy.gif?cid=ecf05e47rdhhyeddfui0dg2l0jsly3ej4cm8n5c90bsuzv20&rid=giphy.gif&ct=g" alt="aboutImg">
             <div class="info">
                 
                 <div class="gear"><i class="fa-solid fa-gear"></i></div>
                 <h1>
-                    Hello, My name is Pablo Zerpa,<br>
-                    I'm a web developer
+                    Hi, I'am Pablo<br>
+                    Web Developer
                 </h1>
-                <p>Let me help you with your project</p>
+                <p>
+                    I'm a Programmer and System Engineering <br>
+                    Student with knowledge in web technologies, <br>
+                    frontend development and database.
+                </p>
                 <div class="node"><i class="fa-solid fa-circle-nodes"></i></div>
 
             </div>
         </div>
 
         <!-------------------- SKILLS -------------------->
-        <div class="skills" id="skills">
+        <div class="skills center" id="skills">
             <h1>Skills</h1>
 
-            <div class="skillsGrid">
+            <div class="skillsGrid center">
                 <ul>
                     <li>
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/html5/html5-original.svg" alt="">
-                        <p>HTML</p>
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/javascript/javascript-original.svg" alt="">
+                        <p>Javascript</p>
                     </li>
                     <li>
                         <img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/css3/css3-original.svg" alt="">
                         <p>CSS</p>
                     </li>
                     <li>
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/sass/sass-original.svg" alt="">
-                        <p>SASS</p>
-                    </li>
-                    <li>
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/javascript/javascript-original.svg" alt="">
-                        <p>Javascript</p>
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/html5/html5-original.svg" alt="">
+                        <p>HTML</p>
                     </li>
                     <li>
                         <img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/react/react-original.svg" alt="">
                         <p>React.js</p>
+                    </li>
+                    <li>
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/sass/sass-original.svg" alt="">
+                        <p>SASS</p>
                     </li>
                     <li>
                         <img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/nodejs/nodejs-original.svg" alt="">
@@ -112,24 +110,23 @@
         </div>
 
         <!-------------------- PROJECT -------------------->
-        <div class="project" id="project">
+        <div class="project center" id="project">
 
             <h1>Projects</h1>
-            <div class="projectGrid">
+            <div class="projectGrid center">
 
                 <div class="card">
                     <div class="cardImg">
-                        <img src="https://github.com/PabloZerpa/Chroma/raw/master/public/screencapture-chroma.png" alt="">
+                        <img src="https://github.com/PabloZerpa/Dashboard-02/raw/main/dashboard.png" alt="">
                     </div>
                     
-                    <h6>Chroma - Painting Website</h6>
+                    <h6>Dashboard</h6>
                     <ul>
-                        <li><i class="fa-brands fa-html5"></i></li>
-                        <li><i class="fa-brands fa-css3-alt"></i></li>
-                        <li><i class="fa-brands fa-square-js"></i></li>
-                        <li><i class="fa-brands fa-react"></i></li>
+                        <li><img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/html5/html5-original.svg" alt=""></i></li>
+                        <li><img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/css3/css3-original.svg" alt=""></li>
+                        <li><img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/javascript/javascript-original.svg" alt=""></li>
                     </ul>
-                    <a href="https://chroma-website-example.herokuapp.com" target="_blank" >View</a>
+                    <a href="https://pablozerpa.github.io/Dashboard-02/" target="_blank" >View</a>
                 </div>
 
                 <div class="card">
@@ -137,12 +134,11 @@
                         <img src="https://github.com/PabloZerpa/Decibels/raw/master/css/decibels.png" alt="">
                     </div>
                     
-                    <h6>Decibels - Music Website</h6>
+                    <h6>Music Website</h6>
                     <ul>
-                        <li><i class="fa-brands fa-html5"></i></li>
-                        <li><i class="fa-brands fa-css3-alt"></i></li>
-                        <li><i class="fa-brands fa-square-js"></i></li>
-                        <li><i class="fa-brands fa-node-js"></i></li>
+                        <li><img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/html5/html5-original.svg" alt=""></i></li>
+                        <li><img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/css3/css3-original.svg" alt=""></li>
+                        <li><img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/javascript/javascript-original.svg" alt=""></li>
                     </ul>
                     <a href="https://pablozerpa.github.io/Decibels/" target="_blank" >View</a>
                 </div>
@@ -154,10 +150,10 @@
                     
                     <h6>Widgets App</h6>
                     <ul>
-                        <li><i class="fa-brands fa-html5"></i></li>
-                        <li><i class="fa-brands fa-css3-alt"></i></li>
-                        <li><i class="fa-brands fa-square-js"></i></li>
-                        <li><i class="fa-brands fa-node-js"></i></li>
+                        <li><img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/html5/html5-original.svg" alt=""></i></li>
+                        <li><img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/css3/css3-original.svg" alt=""></li>
+                        <li><img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/javascript/javascript-original.svg" alt=""></li>
+                        <li><img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/nodejs/nodejs-original.svg" alt=""></li>
                     </ul>
                     <a href="https://widgets-app1.herokuapp.com" target="_blank" >View</a>
                 </div>
@@ -169,26 +165,27 @@
                     
                     <h6>Virtual Courses</h6>
                     <ul>
-                        <li><i class="fa-brands fa-html5"></i></li>
-                        <li><i class="fa-brands fa-css3-alt"></i></li>
-                        <li><i class="fa-brands fa-square-js"></i></li>
-                        <li><i class="fa-brands fa-node-js"></i></li>
+                        <li><img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/html5/html5-original.svg" alt=""></i></li>
+                        <li><img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/css3/css3-original.svg" alt=""></li>
+                        <li><img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/javascript/javascript-original.svg" alt=""></li>
+                        <li><img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/nodejs/nodejs-original.svg" alt=""></li>
                     </ul>
                     <a href="https://virtual-courses.herokuapp.com" target="_blank" >View</a>
                 </div>
 
                 <div class="card">
                     <div class="cardImg">
-                        <img src="https://github.com/PabloZerpa/Dashboard-02/raw/main/dashboard.png" alt="">
+                        <img src="https://github.com/PabloZerpa/Chroma/raw/master/public/screencapture-chroma.png" alt="">
                     </div>
                     
-                    <h6>Dashboard</h6>
+                    <h6>Painting Website</h6>
                     <ul>
-                        <li><i class="fa-brands fa-html5"></i></li>
-                        <li><i class="fa-brands fa-css3-alt"></i></li>
-                        <li><i class="fa-brands fa-square-js"></i></li>
+                        <li><img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/html5/html5-original.svg" alt=""></i></li>
+                        <li><img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/css3/css3-original.svg" alt=""></li>
+                        <li><img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/javascript/javascript-original.svg" alt=""></li>
+                        <li><img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/react/react-original.svg" alt=""></li>
                     </ul>
-                    <a href="https://pablozerpa.github.io/Dashboard-02/" target="_blank" >View</a>
+                    <a href="https://chroma-website.netlify.app" target="_blank" >View</a>
                 </div>
 
                 <div class="card">
@@ -196,45 +193,60 @@
                         <img src="https://raw.githubusercontent.com/PabloZerpa/Astronaut/master/public/astronaut.png" alt="">
                     </div>
                     
-                    <h6>Astronaut - Web Search</h6>
+                    <h6>Web Search</h6>
                     <ul>
-                        <li><i class="fa-brands fa-html5"></i></li>
-                        <li><i class="fa-brands fa-css3-alt"></i></li>
-                        <li><i class="fa-brands fa-square-js"></i></li>
-                        <li><i class="fa-brands fa-react"></i></li>
-                        <li><i class="fa-brands fa-node-js"></i></li>
+                        <li><img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/html5/html5-original.svg" alt=""></i></li>
+                        <li><img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/css3/css3-original.svg" alt=""></li>
+                        <li><img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/javascript/javascript-original.svg" alt=""></li>
+                        <li><img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/react/react-original.svg" alt=""></li>
+                        <li><img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/nodejs/nodejs-original.svg" alt=""></li>
                     </ul>
                     <a href="https://astronaut-web-search.netlify.app" target="_blank" >View</a>
                 </div>
 
+                
+
                 <div class="card">
                     <div class="cardImg">
-                        <img src="https://github.com/PabloZerpa/Virtual-Courses/raw/main/virtual_courses.png" alt="">
+                        <img src="https://github.com/PabloZerpa/ChatApp/raw/master/public/public/screenshoot_chatapp.png" alt="">
                     </div>
                     
-                    <h6>Coming - Soon</h6>
+                    <h6>Chat Application</h6>
                     <ul>
-                        <li><i class="fa-brands fa-html5"></i></li>
-                        <li><i class="fa-brands fa-css3-alt"></i></li>
-                        <li><i class="fa-brands fa-square-js"></i></li>
-                        <li><i class="fa-brands fa-react"></i></li>
-                        <li><i class="fa-brands fa-node-js"></i></li>
+                        <li><img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/html5/html5-original.svg" alt=""></i></li>
+                        <li><img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/css3/css3-original.svg" alt=""></li>
+                        <li><img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/javascript/javascript-original.svg" alt=""></li>
+                        <li><img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/react/react-original.svg" alt=""></li>
+                        <li><img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/nodejs/nodejs-original.svg" alt=""></li>
                     </ul>
                     <a href="https://google.com" target="_blank" >View</a>
                 </div>
 
                 <div class="card">
                     <div class="cardImg">
+                        <img src="https://raw.githubusercontent.com/PabloZerpa/Shopping_Cart/master/public/screenshoot_shoppingCart.png" alt="">
+                    </div>
+                    
+                    <h6>Shopping Cart</h6>
+                    <ul>
+                        <li><img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/html5/html5-original.svg" alt=""></i></li>
+                        <li><img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/css3/css3-original.svg" alt=""></li>
+                        <li><img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/typescript/typescript-original.svg" alt="typescript" /></li>
+                        <li><img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/react/react-original.svg" alt=""></li>
+                    </ul>
+                    <a href="https://personal-cart-ts.netlify.app/" target="_blank" >View</a>
+                </div>
+
+                <div class="card">
+                    <div class="cardImg">
                         <img src="https://github.com/PabloZerpa/Virtual-Courses/raw/main/virtual_courses.png" alt="">
                     </div>
                     
-                    <h6>Coming - Soon</h6>
+                    <h6>VideoGame</h6>
                     <ul>
-                        <li><i class="fa-brands fa-html5"></i></li>
-                        <li><i class="fa-brands fa-css3-alt"></i></li>
-                        <li><i class="fa-brands fa-square-js"></i></li>
-                        <li><i class="fa-brands fa-react"></i></li>
-                        <li><i class="fa-brands fa-node-js"></i></li>
+                        <li><img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/html5/html5-original.svg" alt=""></i></li>
+                        <li><img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/css3/css3-original.svg" alt=""></li>
+                        <li><img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/typescript/typescript-original.svg" alt=""></li>
                     </ul>
                     <a href="https://google.com" target="_blank" >View</a>
                 </div>
@@ -246,13 +258,27 @@
         </div>
 
         <!-------------------- CONTACT -------------------->
-        <div class="contact" id="contact">
+        <div class="contact center" id="contact">
             <h1>Contact Me</h1>
             <ul>
                 <a href="https://www.linkedin.com/in/pablo-zerpa/" target="_blank">Linkedin<i class="fa-brands fa-linkedin"></i></a>
                 <a href="https://github.com/PabloZerpa" target="_blank">GitHub<i class="fa-brands fa-github-alt"></i></a>
                 <a href="https://hashnode.com" target="_blank">Hashnode<i class="fa-brands fa-hashnode"></i></a>
-                <a href="https://google.com" target="_blank">Email<i class="fa-solid fa-envelope"></i></a>
+                <!-- <a href="https://google.com" target="_blank">Email<i class="fa-solid fa-envelope"></i></a> -->
+
+                
+                    <!-- <form action="https://formsubmit.co/pa.zv.148@email.com" method="POST"> -->
+                    <form >
+                        <div class="inputs">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <input type="text" name="_subject" placeholder="Subject" required>
+                        </div>
+                        <textarea cols="7" name="message" placeholder="Your Message" required></textarea>
+                        <button type="submit">Send<i class="fa-solid fa-envelope"></i></button>
+                   </form>
+                
+
             </ul>
         </div>
 
@@ -268,5 +294,6 @@
     </footer>
     
     <script src="script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 </html>
