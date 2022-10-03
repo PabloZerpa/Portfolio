@@ -20,18 +20,24 @@
             <h1>Pablo Zerpa</h1>
             <ul>
                 <div class="icon">
-                    <li>💻 Web Developer</li>
-                    <li>⚙️ Systems Engineering</li>
-                    <li>✉️ pablozerpav@gmail.com</li>
+                    <li><i class="fa-solid fa-code"></i> Web Developer</li>
+                    <li><i class="fa-solid fa-gear"></i> Systems Engineering</li>
+                    <li><i class="fa-solid fa-envelope"></i> pablozerpav@gmail.com</li>
                 </div>
             </ul>
-            <a href="#about"><i class="fa-solid fa-arrow-down"></i></a>
+            <div class="socials">
+                <a href="https://www.linkedin.com/in/pablo-zerpa/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/PabloZerpa" target="_blank"><i class="fa-brands fa-github-alt"></i></a>
+                <a href="https://hashnode.com" target="_blank"><i class="fa-brands fa-hashnode"></i></a>
+            </div>
+            <img src="https://media1.giphy.com/media/gh0RRgkTXedvF0pDc0/giphy.gif?cid=ecf05e47rdhhyeddfui0dg2l0jsly3ej4cm8n5c90bsuzv20&rid=giphy.gif&ct=g" alt="aboutImg">
+            
+            <a href="#skills"><i class="fa-solid fa-arrow-down"></i></a>
         </div>
 
         <nav class="nav" id="nav">
             <a href="#"><img src="./pz.png" alt="logo"></a>
             <a href="#" class="active-link">Home</a>
-            <a href="#about">About Me</a>
             <a href="#skills">Skills</a>
             <a href="#project">Project</a>
             <a href="#contact">Contact</a>
@@ -42,30 +48,11 @@
 
     <!-------------------- MAIN CONTENT -------------------->
     <main>
-        <!-------------------- ABOUT -------------------->
-        <div class="about center" id="about">
-            <img src="https://media1.giphy.com/media/gh0RRgkTXedvF0pDc0/giphy.gif?cid=ecf05e47rdhhyeddfui0dg2l0jsly3ej4cm8n5c90bsuzv20&rid=giphy.gif&ct=g" alt="aboutImg">
-            <div class="info">
-                
-                <div class="gear"><i class="fa-solid fa-gear"></i></div>
-                <h1>
-                    Hi, I'am Pablo<br>
-                    Web Developer
-                </h1>
-                <p>
-                    I'm a Programmer and System Engineering <br>
-                    Student with knowledge in web technologies, <br>
-                    frontend development and database.
-                </p>
-                <div class="node"><i class="fa-solid fa-circle-nodes"></i></div>
-
-            </div>
-        </div>
 
         <!-------------------- SKILLS -------------------->
         <div class="skills center" id="skills">
-            <h1>Skills</h1>
-
+            <h1>Skills <div class="node"><i class="fa-solid fa-circle-nodes"></i></div></h1>
+            
             <div class="skillsGrid center">
                 <ul>
                     <li>
@@ -81,28 +68,28 @@
                         <p>HTML</p>
                     </li>
                     <li>
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/react/react-original.svg" alt="">
-                        <p>React.js</p>
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/typescript/typescript-original.svg" alt="">
+                        <p>TypeScript</p>
                     </li>
                     <li>
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/sass/sass-original.svg" alt="">
-                        <p>SASS</p>
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/java/java-original.svg" alt="">
+                        <p>Java</p>
+                    </li>
+                    <li>
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/react/react-original.svg" alt="">
+                        <p>React.js</p>
                     </li>
                     <li>
                         <img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/nodejs/nodejs-original.svg" alt="">
                         <p>Node.js</p>
                     </li>
                     <li>
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/typescript/typescript-original.svg" alt="">
-                        <p>TypeScript</p>
+                        <i class="fa-solid fa-database" style="color: rgb(150, 150, 150);"></i>
+                        <p>Database</p>
                     </li>
                     <li>
                         <img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/git/git-original.svg" alt="">
                         <p>Git</p>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-database" style="color: rgb(150, 150, 150);"></i>
-                        <p>Database</p>
                     </li>
                 </ul>
             </div>
@@ -112,7 +99,7 @@
         <!-------------------- PROJECT -------------------->
         <div class="project center" id="project">
 
-            <h1>Projects</h1>
+            <h1>Projects <div class="gear"><i class="fa-solid fa-gear"></i></div></h1>
             <div class="projectGrid center">
 
                 <div class="card">
@@ -237,7 +224,7 @@
                     <a href="https://personal-cart-ts.netlify.app/" target="_blank" >View</a>
                 </div>
 
-                <div class="card">
+                <!-- <div class="card">
                     <div class="cardImg">
                         <img src="https://github.com/PabloZerpa/Virtual-Courses/raw/main/virtual_courses.png" alt="">
                     </div>
@@ -249,37 +236,26 @@
                         <li><img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/typescript/typescript-original.svg" alt=""></li>
                     </ul>
                     <a href="https://google.com" target="_blank" >View</a>
-                </div>
-
+                </div> -->
                 
-
             </div>
 
         </div>
 
         <!-------------------- CONTACT -------------------->
         <div class="contact center" id="contact">
-            <h1>Contact Me</h1>
-            <ul>
-                <a href="https://www.linkedin.com/in/pablo-zerpa/" target="_blank">Linkedin<i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/PabloZerpa" target="_blank">GitHub<i class="fa-brands fa-github-alt"></i></a>
-                <a href="https://hashnode.com" target="_blank">Hashnode<i class="fa-brands fa-hashnode"></i></a>
-                <!-- <a href="https://google.com" target="_blank">Email<i class="fa-solid fa-envelope"></i></a> -->
+            <h1>Contact Me <div class="plane"><i class="fa-solid fa-paper-plane"></i></div></h1>
+            <!-- <form action="https://formsubmit.co/pa.zv.148@email.com" method="POST"> -->
+            <form >
+                <div class="inputs">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="text" name="_subject" placeholder="Subject" required>
+                </div>
+                <textarea cols="7" name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send<i class="fa-solid fa-envelope"></i></button>
+           </form>
 
-                
-                    <!-- <form action="https://formsubmit.co/pa.zv.148@email.com" method="POST"> -->
-                    <form >
-                        <div class="inputs">
-                            <input type="text" name="name" placeholder="Your Name" required>
-                            <input type="email" name="email" placeholder="Your Email" required>
-                            <input type="text" name="_subject" placeholder="Subject" required>
-                        </div>
-                        <textarea cols="7" name="message" placeholder="Your Message" required></textarea>
-                        <button type="submit">Send<i class="fa-solid fa-envelope"></i></button>
-                   </form>
-                
-
-            </ul>
         </div>
 
     </main>
