@@ -1,7 +1,10 @@
 
 let state = false;
+let state2 = false;
+
 let darkMode = document.getElementById("darkMode");
 document.body.classList.toggle('dark');
+
 
 darkMode.addEventListener("click", function() {
     if(state)
@@ -11,4 +14,12 @@ darkMode.addEventListener("click", function() {
 
     document.body.classList.toggle('dark');
     state = !state;
-})
+});
+
+function submitFunction(e) {
+    e.preventDefault();
+    document.getElementById("sendMessage").reset();
+    return false;
+  }
+
+document.getElementById("sendMessage").addEventListener("click", submitFunction);

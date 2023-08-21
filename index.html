@@ -2,268 +2,419 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="assets/pz.png" />
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style2.css" />
 
-    <title>Portfolio - Pablo</title>
+    <title>Portfolio</title>
 </head>
 <body>
     <!-------------------- HEADER -------------------->
     <header>
         <input type="checkbox" id="check">
-        <label for="check" class="checkbtn"><i class="fas fa-bars"></i></label>
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
 
-        <div class="title center">
-            <h1>Pablo Zerpa</h1>
-            <ul>
-                <div class="icon">
-                    <li><i class="fa-solid fa-code"></i> Web Developer</li>
-                    <li><i class="fa-solid fa-gear"></i> Engineering Student</li>
-                    <li><i class="fa-solid fa-envelope"></i> pablozerpav@gmail.com</li>
-                </div>
-            </ul>
-            <div class="socials">
-                <a href="https://www.linkedin.com/in/pablo-zerpa/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/PabloZerpa" target="_blank"><i class="fa-brands fa-github-alt"></i></a>
-            </div>
-            <img src="https://media1.giphy.com/media/gh0RRgkTXedvF0pDc0/giphy.gif?cid=ecf05e47rdhhyeddfui0dg2l0jsly3ej4cm8n5c90bsuzv20&rid=giphy.gif&ct=g" alt="aboutImg">
-            
-            <a href="#skills"><i class="fa-solid fa-arrow-down"></i></a>
-        </div>
-
-        <nav class="nav" id="nav">
+        <nav>
             <a href="#"><img src="./assets/pz.png" alt="logo"></a>
-            <a href="#" class="active-link">Home</a>
-            <a href="#skills">Skills</a>
-            <a href="#project">Project</a>
-            <a href="#contact">Contact</a>
-            <button class="darkMode" id="darkMode"><i class="fa-solid fa-sun"></i></button>
+
+            <ul>
+                <a href="#" class="active-link">Home</a>
+                <a href="#skills">Skills</a>
+                <a href="#project">Project</a>
+                <a href="#contact">Contact</a>
+
+                <button class="darkMode" id="darkMode">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+            </ul>
         </nav>
     </header>
 
     <!-------------------- MAIN CONTENT -------------------->
     <main>
-        <!-------------------- SKILLS -------------------->
-        <div class="skills center" id="skills">
-            <h1>Skills <div class="node"><i class="fa-solid fa-circle-nodes"></i></div></h1>
-            
-            <div class="skillsGrid center">
+
+        <!-------------------- ABOUT SECTION -------------------->
+
+        <section class="about" id="about">
+            <div class="title">
+                <h1>Pablo Zerpa</h1>
                 <ul>
                     <li>
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/javascript/javascript-original.svg" alt="">
-                        <p>Javascript</p>
+                        <i class="fa-solid fa-code"></i>
+                        Web Developer
                     </li>
                     <li>
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/css3/css3-original.svg" alt="">
-                        <p>CSS</p>
+                        <i class="fa-solid fa-gear"></i>
+                        Engineering Student
                     </li>
                     <li>
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/html5/html5-original.svg" alt="">
-                        <p>HTML</p>
-                    </li>
-                    <li>
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/typescript/typescript-original.svg" alt="">
-                        <p>TypeScript</p>
-                    </li>
-                    <li>
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/react/react-original.svg" alt="">
-                        <p>React.js</p>
-                    </li>
-                    <li>
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/svelte/svelte-original.svg" alt="">
-                        <p>Svelte</p>
-                    </li>
-                    <li>
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/nodejs/nodejs-original.svg" alt="">
-                        <p>Node.js</p>
-                    </li>
-                    <li>
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/java/java-original.svg" alt="">
-                        <p>Java</p>
-                    </li>
-                    <li>
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/git/git-original.svg" alt="">
-                        <p>Git</p>
-                    </li>
-                    <li>
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/mysql/mysql-original.svg" alt="">
-                        <p>MySQL</p>
-                    </li>
-                    <li>
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/mongodb/mongodb-original.svg" alt="">
-                        <p>MongoDB</p>
+                        <i class="fa-solid fa-envelope"></i>
+                        pablozerpav@gmail.com
                     </li>
                 </ul>
+                <div class="socials">
+                    <a href="https://www.linkedin.com/in/pablo-zerpa/" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+        
+                    <a href="https://github.com/PabloZerpa" target="_blank">
+                        <i class="fa-brands fa-github-alt"></i>
+                    </a>
+        
+                    <a href="mailto:pablozerpav@gmail.com" target="_blank">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </div>
             </div>
+        
+            <img 
+                src="https://media1.giphy.com/media/gh0RRgkTXedvF0pDc0/giphy.gif?cid=ecf05e47rdhhyeddfui0dg2l0jsly3ej4cm8n5c90bsuzv20&rid=giphy.gif&ct=g" 
+                alt="aboutImg" >
+        </section>
 
-        </div>
+        <!-------------------- SKILLS SECTION -------------------->
+        <section class="skills center" id="skills">
+            
+            <div class="skillContent">
+          
+              <div class="expedu">
+          
+                <div class="experience">
+                    <h1>
+                      Experience
+                      <div class="exp"><i class="fas fa-briefcase"></i></div>
+                    </h1>
+                    <div class="timeline">
+                        <ul>
+                            <li>
+                                <span>November 2022 - May 2023</span>
+                                <div class="content">
+                                  <h3>Web application for registration and search of information - PDVSA</h3>
+                                  <p>Development of a client-server web application using "react" in the user 
+                                    interface, "node.js" in the server and a relational database, to register, 
+                                    search and control the information of the applications, databases and 
+                                    servers of the IT department.</p>
+                                </div>
+                             </li>
 
-        <!-------------------- PROJECT -------------------->
-        <div class="project center" id="project">
-
-            <h1>Projects <div class="gear"><i class="fa-solid fa-gear"></i></div></h1>
-            <div class="projectGrid center">
-
-                <div class="card">
-                    <div class="cardImg">
-                        <img src="./assets/dashboard.png" alt="">
+                             <li>
+                                <span>July 2022 </span>
+                                <div class="content">
+                                  <h3>Chat-Web Application</h3>
+                                  <p>Development of an application with a non-relational database that allows 
+                                    the registration and login of a user and the joining or creation of a chat 
+                                    room that allows chatting with other registered users.</p>
+                                </div>
+                             </li>
+                        </ul>
                     </div>
-                    
-                    <h6>Dashboard</h6>
-                    <ul>
-                        <li><img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/html5/html5-original.svg" alt=""></i></li>
-                        <li><img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/css3/css3-original.svg" alt=""></li>
-                        <li><img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/javascript/javascript-original.svg" alt=""></li>
-                    </ul>
-                    <a href="https://pablozerpa.github.io/Dashboard-02/" target="_blank" >View</a>
                 </div>
-
-                <div class="card">
-                    <div class="cardImg">
-                        <img src="./assets/decibels.png" alt="">
-                    </div>
-                    
-                    <h6>Music Website</h6>
-                    <ul>
-                        <li><img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/html5/html5-original.svg" alt=""></i></li>
-                        <li><img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/css3/css3-original.svg" alt=""></li>
-                        <li><img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/javascript/javascript-original.svg" alt=""></li>
-                    </ul>
-                    <a href="https://pablozerpa.github.io/Decibels/" target="_blank" >View</a>
+          
+                <div class="education">
+                  <h1>
+                    Educaction
+                    <div class="edu"><i class="fas fa-graduation-cap"></i></div>
+                  </h1>
+                  <div class="timeline">
+                      <ul>
+                          <li>
+                            <span>2016-Present</span>
+                            <div class="content">
+                              <h3>Systems Engineering</h3>
+                              <p>Universidad de Oriente</p>
+                            </div>
+                          </li>
+                      </ul>
+                  </div>
                 </div>
+          
+              </div>
+              
+              <div class="stack">
+                <h1>
+                  Skills
+                  <div class="node"><i class="fas fa-tools"></i></div>
+                </h1>
+                  
+                  <div class="skillList">
+                      <div class="skill">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/html5/html5-original.svg" alt="HTML" >
+                        <span>HTML</span>
+                      </div>
 
-                <!-- <div class="card">
-                    <div class="cardImg">
-                        <img src="https://github.com/PabloZerpa/Widgets-App/raw/main/widgets.png" alt="">
-                    </div>
-                    
-                    <h6>Widgets App</h6>
-                    <ul>
-                        <li><img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/html5/html5-original.svg" alt=""></i></li>
-                        <li><img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/css3/css3-original.svg" alt=""></li>
-                        <li><img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/javascript/javascript-original.svg" alt=""></li>
-                        <li><img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/nodejs/nodejs-original.svg" alt=""></li>
-                    </ul>
-                    <a href="https://widgets-app1.herokuapp.com" target="_blank" >View</a>
-                </div> -->
+                      <div class="skill">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/css3/css3-original.svg" alt="CSS" >
+                        <span>CSS</span>
+                      </div>
 
-                <!-- <div class="card">
-                    <div class="cardImg">
-                        <img src="https://github.com/PabloZerpa/Virtual-Courses/raw/main/virtual_courses.png" alt="">
-                    </div>
-                    
-                    <h6>Virtual Courses</h6>
-                    <ul>
-                        <li><img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/html5/html5-original.svg" alt=""></i></li>
-                        <li><img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/css3/css3-original.svg" alt=""></li>
-                        <li><img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/javascript/javascript-original.svg" alt=""></li>
-                        <li><img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/nodejs/nodejs-original.svg" alt=""></li>
-                    </ul>
-                    <a href="https://virtual-courses.herokuapp.com" target="_blank" >View</a>
-                </div> -->
+                      <div class="skill">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/javascript/javascript-original.svg" alt="JavaScript" >
+                        <span>JavaScript</span>
+                      </div>
 
-                <div class="card">
-                    <div class="cardImg">
-                        <img src="./assets/chroma.png" alt="">
+                      <div class="skill">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/typescript/typescript-original.svg" alt="TypeScript" >
+                        <span>TypeScript</span>
+                      </div>
+                  </div>
+          
+                  <div class="skillList">
+                    <div class="skill">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/react/react-original.svg" alt="React" >
+                        <span>React</span>
                     </div>
-                    
-                    <h6>Painting Website</h6>
-                    <ul>
-                        <li><img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/html5/html5-original.svg" alt=""></i></li>
-                        <li><img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/css3/css3-original.svg" alt=""></li>
-                        <li><img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/javascript/javascript-original.svg" alt=""></li>
-                        <li><img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/react/react-original.svg" alt=""></li>
-                        <!-- <li><img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/nextjs/nextjs-original.svg" alt=""/></li> -->
-                    </ul>
-                    <a href="https://chroma-website.vercel.app/" target="_blank" >View</a>
-                </div>
 
-                <div class="card">
-                    <div class="cardImg">
-                        <img src="./assets/astronaut.png" alt="">
+                    <div class="skill">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/nextjs/nextjs-original.svg" alt="Nextjs" >
+                        <span>Nextjs</span>
                     </div>
-                    
-                    <h6>Web Search</h6>
-                    <ul>
-                        <li><img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/html5/html5-original.svg" alt=""></i></li>
-                        <li><img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/css3/css3-original.svg" alt=""></li>
-                        <li><img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/javascript/javascript-original.svg" alt=""></li>
-                        <li><img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/react/react-original.svg" alt=""></li>
-                        <li><img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/nodejs/nodejs-original.svg" alt=""></li>
-                    </ul>
-                    <a href="https://astronaut-web-search.netlify.app" target="_blank" >View</a>
-                </div>
 
-                
-                <div class="card">
-                    <div class="cardImg">
-                        <img src="./assets/chat.png" alt="">
+                    <div class="skill">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/svelte/svelte-original.svg" alt="Svelte" >
+                        <span>Svelte</span>
                     </div>
-                    
-                    <h6>Chat Application</h6>
-                    <ul>
-                        <li><img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/html5/html5-original.svg" alt=""></i></li>
-                        <li><img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/css3/css3-original.svg" alt=""></li>
-                        <li><img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/javascript/javascript-original.svg" alt=""></li>
-                        <!-- <li><img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/react/react-original.svg" alt=""></li> -->
-                        <li><img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/svelte/svelte-original.svg" alt=""></li>
-                        <li><img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/nodejs/nodejs-original.svg" alt=""></li>
-                    </ul>
-                    <a href="https://chat-app-wxyz.netlify.app/" target="_blank" >View</a>
-                </div>
 
-                <!-- <div class="card">
-                    <div class="cardImg">
-                        <img src="https://raw.githubusercontent.com/PabloZerpa/Shopping_Cart/master/public/screenshoot_shoppingCart.png" alt="">
+                    <div class="skill">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/nodejs/nodejs-original.svg" alt="Node.js" >
+                        <span>Node.js</span>
                     </div>
-                    
-                    <h6>Shopping Cart</h6>
-                    <ul>
-                        <li><img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/html5/html5-original.svg" alt=""></i></li>
-                        <li><img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/css3/css3-original.svg" alt=""></li>
-                        <li><img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/typescript/typescript-original.svg" alt="typescript" /></li>
-                        <li><img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/react/react-original.svg" alt=""></li>
-                    </ul>
-                    <a href="https://personal-cart-ts.netlify.app/" target="_blank" >View</a>
-                </div> -->
 
-                <div class="card">
-                    <div class="cardImg">
-                        <img src="./assets/game.png" alt="">
+                    <div class="skill">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/python/python-original.svg" alt="Python" >
+                        <span>Python</span>
                     </div>
-                    
-                    <h6>VideoGame</h6>
-                    <ul>
-                        <li><img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/html5/html5-original.svg" alt=""></i></li>
-                        <li><img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/css3/css3-original.svg" alt=""></li>
-                        <li><img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/typescript/typescript-original.svg" alt=""></li>
-                        <li><img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/svelte/svelte-original.svg" alt=""></li>
-                    </ul>
-                    <a href="https://combats-game.netlify.app" target="_blank" >View</a>
-                </div>
-                
+
+                    <div class="skill">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/java/java-original.svg" alt="Java" >
+                        <span>Java</span>
+                    </div>
+                  </div>
+          
+                  <div class="skillList">
+                    <div class="skill">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/git/git-original.svg" alt="Git" >
+                        <span>Git</span>
+                    </div>
+
+                    <div class="skill">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/mysql/mysql-original.svg" alt="MySQL" >
+                        <span>MySQL</span>
+                    </div>
+
+                    <div class="skill">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/mongodb/mongodb-original.svg" alt="MongoDB" >
+                        <span>MongoDB</span>
+                    </div>
+                  </div>
+              </div>
+              
             </div>
+        </section>
 
-        </div>
+        <!-------------------- PROJECTS SECTION -------------------->
+        <section class="projects" id="projects">
 
-        <!-------------------- CONTACT -------------------->
-        <div class="contact center" id="contact">
-            <h1>Contact Me <div class="plane"><i class="fa-solid fa-paper-plane"></i></div></h1>
-            <!-- <form action="https://formsubmit.co/pa.zv.148@email.com" method="POST"> -->
-            <form >
-                <div class="inputs">
-                    <input type="text" name="name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
-                    <input type="text" name="_subject" placeholder="Subject" required>
+            <h1>
+                Projects 
+                <div class="gear"><i class="fas fa-cog"></i></div>
+            </h1>
+        
+            <div class="gallery">
+
+                <div class="project">
+                    <img src="/assets/astronaut.png" alt="" class="galleryImg" >
+                
+                    <div class="info">
+                        <div class="title">
+                            <h5>ASTRONAUT</h5>
+                            <span>WEB SEARCH USING GOOGLE API</span>
+                        </div>
+                
+                        <div class="icons">
+                            <ul>
+                                <div class="icon">
+                                    <i class="fab fa-html5"></i>
+                                    <i class="fab fa-css3-alt"></i>
+                                    <i class="fab fa-js-square"></i>
+                                    <i class="fab fa-react"></i>
+                                    <i class="fab fa-node-js"></i>
+                                </div>
+                            </ul>
+                
+                            <div class="links">
+                                <a href="https://github.com/PabloZerpa/Astronaut" target="_blank" ><i class="fa-solid fa-code"></i>Code</a>
+                                <a href="https://astronaut-search-web.netlify.app/" target="_blank" ><i class="fa-solid fa-eye"></i>Deploy</a>
+                            </div>
+                        </div>
+                
+                    </div>
                 </div>
-                <textarea cols="7" name="message" placeholder="Your Message" required></textarea>
-                <button type="button">Send<i class="fa-solid fa-envelope"></i></button>
+
+                <div class="project">
+                    <img src="/assets/dashboard.png" alt="" class="galleryImg" >
+                
+                    <div class="info">
+                        <div class="title">
+                            <h5>DASHBOARD</h5>
+                            <span>UI FROM DASHBOARD WITH CHART AND STORAGE LIST</span>
+                        </div>
+                
+                        <div class="icons">
+                            <ul>
+                                <div class="icon">
+                                    <i class="fab fa-html5"></i>
+                                    <i class="fab fa-css3-alt"></i>
+                                    <i class="lni lni-tailwindcss"></i>
+                                    <i class="fab fa-js-square"></i>
+                                </div>
+                            </ul>
+                
+                            <div class="links">
+                                <a href="https://github.com/PabloZerpa/Dashboard-02" target="_blank" ><i class="fa-solid fa-code"></i>Code</a>
+                                <a href="https://pablozerpa.github.io/Dashboard-02/" target="_blank" ><i class="fa-solid fa-eye"></i>Deploy</a>
+                            </div>
+                        </div>
+                
+                    </div>
+                </div>
+
+                <div class="project">
+                    <img src="/assets/chroma.png" alt="" class="galleryImg" >
+                
+                    <div class="info">
+                        <div class="title">
+                            <h5>CHROMA</h5>
+                            <span>ART WEBSITE FOR SHOW PICTURE AND ARTWORK</span>
+                        </div>
+                
+                        <div class="icons">
+                            <ul>
+                                <div class="icon">
+                                    <i class="fab fa-html5"></i>
+                                    <i class="fab fa-css3-alt"></i>
+                                    <i class="lni lni-typescript"></i>
+                                    <i class="lni lni-nextjs"></i>
+                                </div>
+                            </ul>
+                
+                            <div class="links">
+                                <a href="https://github.com/PabloZerpa/Chroma-App" target="_blank" ><i class="fa-solid fa-code"></i>Code</a>
+                                <a href="https://chroma-app.vercel.app/" target="_blank" ><i class="fa-solid fa-eye"></i>Deploy</a>
+                            </div>
+                        </div>
+                
+                    </div>
+                </div>
+
+                <div class="project">
+                    <img src="/assets/chat.png" alt="" class="galleryImg" >
+                    
+                        <div class="info">
+                            <div class="title">
+                                <h5>CHAT</h5>
+                                <span>CHAT APLICATION WITH SVELTE, NODE.JS AND SOCKET.IO</span>
+                            </div>
+                    
+                            <div class="icons">
+                                <ul>
+                                    <div class="icon">
+                                        <i class="fab fa-html5"></i>
+                                        <i class="fab fa-css3-alt"></i>
+                                        <i class="fab fa-js-square"></i>
+                                        <i class="lni lni-svelte"></i>
+                                        <i class="fab fa-node-js"></i>
+                                        <i class="lni lni-mongodb"></i>
+                                    </div>
+                                </ul>
+                    
+                                <div class="links">
+                                    <a href="https://github.com/PabloZerpa/Chat" target="_blank" ><i class="fa-solid fa-code"></i>Code</a>
+                                    <a href="https://chat-talk-app.netlify.app/" target="_blank" ><i class="fa-solid fa-eye"></i>Deploy</a>
+                                </div>
+                        </div>
+                
+                    </div>
+                </div>
+
+                <div class="project">
+                    <img src="/assets/decibels.png" alt="" class="galleryImg" >
+                
+                    <div class="info">
+                        <div class="title">
+                            <h5>DECIBELS</h5>
+                            <span>MUSIC WEBSITE</span>
+                        </div>
+                
+                        <div class="icons">
+                            <ul>
+                                <div class="icon">
+                                    <i class="fab fa-html5"></i>
+                                    <i class="fab fa-css3-alt"></i>
+                                    <i class="fab fa-js-square"></i>
+                                    <i class="lni lni-bootstrap"></i>
+                                </div>
+                            </ul>
+                
+                            <div class="links">
+                                <a href="https://github.com/PabloZerpa/Decibels" target="_blank" ><i class="fa-solid fa-code"></i>Code</a>
+                                <a href="https://pablozerpa.github.io/Decibels/" target="_blank" ><i class="fa-solid fa-eye"></i>Deploy</a>
+                            </div>
+                        </div>
+                
+                    </div>
+                </div>
+
+                <div class="project">
+                    <img src="/assets/system.png" alt="" class="galleryImg" >
+                    
+                        <div class="info">
+                            <div class="title">
+                                <h5>INFORMATION SYSTEM</h5>
+                                <span>WEB APLICATION FOR SEARCH, REGISTER AND CONTROL INFORMATION</span>
+                            </div>
+                    
+                            <div class="icons">
+                                <ul>
+                                    <div class="icon">
+                                        <i class="fab fa-html5"></i>
+                                        <i class="fab fa-css3-alt"></i>
+                                        <i class="fab fa-js-square"></i>
+                                        <i class="fab fa-react"></i>
+                                        <i class="fab fa-node-js"></i>
+                                        <i class="lni lni-mysql"></i>
+                                    </div>
+                                </ul>
+                    
+                                <div class="links">
+                                    <a href="https://github.com/PabloZerpa/proyecto_portafolio" target="_blank" ><i class="fa-solid fa-code"></i>Code</a>
+                                </div>
+                        </div>
+                </div>
+            </div>
+        </section>
+
+        <!-------------------- CONTACT SECTION -------------------->
+        <section class="contact center" id="contact">
+            <h1>
+                Contact 
+                <div class="plane"><i class="fa-solid fa-paper-plane"></i></div>
+            </h1>
+
+            <form id="sendMessage" onsubmit="return submitFunction(event)">
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="text" name="_subject" placeholder="Subject" required>
+                <textarea cols="7" name="message" placeholder="Message" required></textarea>
+                
+                <button type="submit">Send<i class="fa-solid fa-envelope"></i></button>
            </form>
+        </section>
 
-        </div>
 
     </main>
 
@@ -277,6 +428,5 @@
     </footer>
     
     <script src="script.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 </html>
